@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  asp_net_app:
+    image: ${DOCKER_REGISTRY-}aspnetapp
+    build:
+      context: .
+      dockerfile: ASP_NET_APP\Dockerfile
